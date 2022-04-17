@@ -1,23 +1,5 @@
 {
 
-    window.addEventListener('DOMContentLoaded', function () {
-        let mypars = document.querySelectorAll('p'),
-            mybrs = document.querySelectorAll('br');
-
-        function doStuff(callback) {
-            callback();
-        }
-
-        doStuff(function () {
-            document.body.className = 'visible';
-        });
-    }, false);
-}
-
-
-
-{
-
     // right click prevention
     document.oncontextmenu = new Function("return false");
 } {
