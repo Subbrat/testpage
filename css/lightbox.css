@@ -60,7 +60,7 @@ img {
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.imgindex {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -90,7 +90,7 @@ img {
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .active,
