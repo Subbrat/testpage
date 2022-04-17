@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/sb.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/sbc.css">
     <style>
         body,
         h1,
@@ -25,24 +26,24 @@
 </head>
 
 <body class="sb-content" style="max-width:1600px" onmousedown="return false" onselectstart="return false">
-    <nav class="sb-sidebar sb-bar-block sb-white sb-animate-left sb-text-grey sb-collapse sb-top sb-center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <nav class="sb-sidebar sb-bar-block sbc-ink sb-animate-left sb-text-white sb-collapse sb-top sb-center"
+        style="z-index:3;width:300px;" id="mySidebar"><br>
         <h3 class="sb-padding-8 sb-center"><b>Demo • W</b></h3>
-        <a href="#top" onclick="sb_close()" class="sb-bar-item sb-button">segment one</a>
-        <a href="#seg2" onclick="sb_close()" class="sb-bar-item sb-button">segment two</a>
-        <a href="#seg3" onclick="sb_close()" class="sb-bar-item sb-button">segment three</a>
+        <a href="#top" onclick="sb_close()" class="sb-bar-item sb-button">Segment One</a>
+        <a href="#seg2" onclick="sb_close()" class="sb-bar-item sb-button">Segment Two</a>
+        <a href="#seg3" onclick="sb_close()" class="sb-bar-item sb-button">Segment Three</a>
     </nav>
-    <header class="sb-container sb-top sb-hide-large sb-card sb-white sb-xlarge sb-padding-16" id="hidhead">
-        <span class="sb-left sb-padding">demo website</span>
-        <a href="javascript:void(0)" class="sb-right sb-button sb-white" onclick="sb_open()">☰</a>
+    <header class="sb-container sb-top sb-hide-large  sb-card sbc-whit sb-xlarge sb-padding-16" id="hidhead">
+        <span class="sb-left sb-padding sb-text-black">Demo Website</span>
+        <a href="javascript:void(0)" class="sb-right sb-button sb-text-black" onclick="sb_open()">☰</a>
     </header>
-    <div class="sb-overlay sb-hide-large sb-animate-opacity" onclick="sb_close()" style="cursor:pointer"
-        title="close side menu" id="myOverlay"></div>
+    <div class="sb-overlay sb-hide-large sb-animate-opacity" onclick="sb_close()" style="cursor:pointer" id="overlay">
+    </div>
     <!-- MAIN PAGE CONTENT! -->
     <div class="sb-main" style="margin-left:300px">
-        <div class="sb-hide-large" style="margin-top:80px"></div>
+        <div class="sb-hide-large" style="margin-top:65px"></div>
         <!-- seg 1 -->
-        <div class="sb-container sb-padding-16 bord sb-card" id="seg1">
+        <div class="sb-container sb-padding-16 sb-card sbc-fgrn" id="seg1">
             <h1 class="">INTRODUCTION • W</h1>
             <p id="dateago">x</p>
             <p>
@@ -80,7 +81,7 @@
             </p>
         </div>
         <!-- seg 2 -->
-        <div class="sb-container sb-center bord sb-dark-grey sb-text-light-grey sb-padding-8" id="seg2">
+        <div class="sb-container sb-center sbc-mint sb-text-black sb-padding-8" id="seg2">
             <h4><b>DEMONSTRATION • W</b></h4>
             <div class="container">
                 <div class="mySlides">
@@ -182,67 +183,68 @@
                 </p>
                 <!-- </div> -->
             </div>
-            <!-- seg3 -->
-            <div class="sb-container sb-light-grey sb-padding-32 sb-padding-large" id="seg3">
-                <!-- <div class="sb-content" style="max-width:600px"> -->
-                <h4 class="sb-center">SEGMENT THREE • W</h4>
-                <p>
-                    ould be any paragraphcould be any paragraphcould be any paragraphvcould be any
-                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
-                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
-                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
-                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
-                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
-                    paragraphcould be anyould be any paragraphcould be any paragraphcould be any paragraphcould be any
-                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
-                    paragraphcould be anyould be any paragraphcould be any paragraphcould be any paragraphcould be any
-                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
-                    paragraphcould be any
-                </p>
-                <!-- </div> -->
-            </div>
-            <footer class="sb-container sb-padding-16 sb-grey">
-                <div class="sb-row-padding">
-                    <div class="sb-third">
-                        <h3 class="sb-center">COL 1</h3>
-                        <p class="cpar">This could be anything.</p>
-                    </div>
-                    <div class="sb-third">
-                        <h3 class="sb-center">COL 2</h3>
-                        <li class="libu sb-center">
-                            <p>page page</p>
-                        </li>
-                        <li class="libu sb-center">
-                            <p>sub row</p>
-                        </li>
-                    </div>
-                    <div class="sb-third">
-                        <h3 class="sb-center">COL3</h3>
-                        <p class="cpar">This could be...</p>
-                    </div>
-                </div>
-            </footer>
-            <div class="sb-black sb-center sb-padding-8">Made By <a href="https://github.com/subbrat/" target="_blank"
-                    class="sb-hover-opacity nodec">Subbrat</a></div>
-            <!-- End -->
         </div>
-        <script>
-            function sb_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
+        <!-- seg3 -->
+        <div class="sb-container sbc-whit sb-padding-32 sb-padding-large" id="seg3">
+            <!-- <div class="sb-content" style="max-width:600px"> -->
+            <h4 class="sb-center">SEGMENT THREE • W</h4>
+            <p>
+                ould be any paragraphcould be any paragraphcould be any paragraphvcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be anyould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be anyould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any
+            </p>
+            <!-- </div> -->
+        </div>
+        <footer class="sb-container sb-padding-16 sbc-ugr">
+            <div class="sb-row-padding">
+                <div class="sb-third">
+                    <h3 class="sb-center">COL 1</h3>
+                    <p class="cpar">This could be anything.</p>
+                </div>
+                <div class="sb-third">
+                    <h3 class="sb-center">COL 2</h3>
+                    <li class="libu sb-center">
+                        <p>page page</p>
+                    </li>
+                    <li class="libu sb-center">
+                        <p>sub row</p>
+                    </li>
+                </div>
+                <div class="sb-third">
+                    <h3 class="sb-center">COL3</h3>
+                    <p class="cpar">This could be...</p>
+                </div>
+            </div>
+        </footer>
+        <div class="sb-black sb-center sb-padding-8">Made By <a href="https://github.com/subbrat/" target="_blank"
+                class="sb-hover-opacity nodec">Subbrat</a></div>
+        <!-- End -->
+    </div>
+    <script>
+        function sb_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
 
-            function sb_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
-            }
-        </script>
-        <script src="./js/main.js"></script>
-        <script src="./js/lightbox.js"></script>
-        <script src="./js/dates.js"></script>
-        <script src="./js/sorting.js"></script>
-        <script src="./js/counter.js"></script>
-        <script src="./js/randomlines.js"></script>
+        function sb_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/dates.js"></script>
+    <script src="./js/sorting.js"></script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/randomlines.js"></script>
 </body>
 
 </html>

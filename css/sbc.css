@@ -24,7 +24,7 @@
     background-color: #0072B5 !important
 }
 
-.sbc-green-ash {
+.sbc-fgrn {
     color: #000 !important;
     background-color: #A0DAA9 !important
 }
@@ -49,17 +49,17 @@
     background-color: #D2386C !important
 }
 
-.sbc-inkwell {
+.sbc-ink {
     color: #fff !important;
     background-color: #363945 !important
 }
 
-.sbc-ultimate-gray {
+.sbc-ugr {
     color: #fff !important;
     background-color: #939597 !important
 }
 
-.sbc-buttercream {
+.sbc-butter {
     color: #000 !important;
     background-color: #EFE1CE !important
 }
@@ -72,4 +72,9 @@
 .sbc-willow {
     color: #fff !important;
     background-color: #9A8B4F !important
+}
+
+.sbc-whit {
+    color: #000 !important;
+    background-color: #EDF1FF !important
 }
