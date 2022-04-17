@@ -1,5 +1,5 @@
+/* Modified from open source For personal and community use by https://github.com/subbrat/ */
 {
-
     let slideIndex = 1;
     showSlides(slideIndex);
 

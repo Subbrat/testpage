@@ -1,3 +1,5 @@
+/* Modified from open source For personal and community use by https://github.com/subbrat/ */
+// but API thing isn't easy, kindly use with caution!
 {
     // refresh and show
     const countE0 = document.getElementById('ct0');
@@ -10,9 +12,7 @@
                 countE0.innerHTML = res.value;
             })
     }
-}
-
-{ // only show
+} { // only show
     const E1 = document.getElementById('ct1');
     updateVisitCount();
 

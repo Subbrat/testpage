@@ -1,7 +1,7 @@
+/* Modified from open source For personal and community use by https://github.com/subbrat/ */
 * {
     box-sizing: border-box;
 }
-
 
 img {
     vertical-align: middle;
@@ -24,8 +24,6 @@ img {
 }
 
 /* Next & previous buttons */
-
-
 .prev,
 .next {
     cursor: pointer;
@@ -97,6 +95,5 @@ img {
 .demo:hover {
     opacity: 1;
 }
-
 
 /* hiding .column in small display */
