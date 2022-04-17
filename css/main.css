@@ -5,3 +5,8 @@
 .txlr {
     text-align: left;
 }
+
+.jtfy {
+    text-align: justify;
+    text-justify: inter-word;
+}
