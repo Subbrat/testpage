@@ -1,20 +1,31 @@
-/* Made from scratch by https://github.com/subbrat/ */
 {
-    { //wr1
-        const lnc1 = [
-            "",
+
+    { //ln1
+        const lnwr1 = [
+            "This page uses HTML5, XML, CSS3, JS, and 6GB of RAM",
+            "This is a dynamic template html webpage",
+            "This is a webpage",
+            "This page uses HTML5",
+            "Hello Void",
         ];
         ! function Newline() {
-            const randomLine = Math.floor(Math.random() * lnc1.length);
-            document.getElementById('line1').innerHTML = lnc1[randomLine];
+            const randomLine = Math.floor(Math.random() * lnwr1.length);
+            document.getElementById('line1').innerHTML = lnwr1[randomLine];
         }();
-    } { //wr2
-        const lnc2 = [
-            "",
+    }
+
+    { //ln2
+        const lnwr2 = [
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi! Possimus molestiae libero adipisci exercitationem nulla inventore distinctio iusto, quis optio, neque corporis!Nam enim eveniet ducimus modi, rerum voluptatum!Lorem ipsum dolor sit amet consectetur adipisicing elit.Rerum officia laboriosam architecto atque, cum ipsam fugit obcaecati vel laborum nisi eaque.Maxime molestiae  inventore aliquid voluptatum est nam, numquam non!Lorem ipsum dolor sit amet consectetur adipisicing  elit.Nobis dignissimos fugit qui voluptas, mollitia expedita facere et ipsum id, dolores tenetur  provident placeat inventore magni laboriosam non excepturi praesentium quisquam ? Lorem ipsum dolor sit amet consectetur adipisicing elit.Eius, porro!Impedit nobis sequi ullam in quas tempore numquam cum recusandae, nam placeat vero dolorem dolores adipisci consectetur, deleniti doloribus maiores!Loremlo Lorem ipsum, dolor sit amet consectetur adipisicing elit.Vero, deleniti ad minus laudantium temporibus architecto nostrum iusto eos harum molestias voluptate mollitia accusamus at magni aperiam quibusdam inventore ? Provident, quo!Loremlolo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi! Possimus molestiae libero adipisci exercitationem nulla inventore distinctio iusto, quis optio, neque corporis!Nam enim eveniet ducimus modi, rerum voluptatum!Lorem ipsum dolor sit amet consectetur adipisicing elit.Rerum officia laboriosam architecto atque, cum ipsam fugit obcaecati vel laborum nisi eaque.Maxime molestiae  inventore aliquid voluptatum est nam, numquam non!Lorem ipsum dolor sit amet consectetur adipisicing  elit.Nobis dignissimos fugit qui voluptas, mollitia expedita facere et ipsum id, dolores tenetur  provident placeat inventore magni laboriosam non excepturi praesentium quisquam ? Lorem ipsum dolor sit amet consectetur adipisicing elit.Eius, porro!Impedit nobis sequi ullam in quas tempore numquam cum recusandae, nam placeat vero dolorem dolores adipisci consectetur, deleniti doloribus maiores!Loremlo Lorem ipsum, dolor sit amet consectetur adipisicing elit.Vero, deleniti ad minus laudantium temporibus architecto nostrum iusto eos harum molestias voluptate mollitia accusamus at magni aperiam quibusdam inventore ? Provident, quo!Loremlolo",
+
+
+            "Synthetic biology (SynBio) is a multidisciplinary area of research that seeks to create new biological parts, devices, and systems, or to redesign systems that are already found in nature.  It is a branch of science that encompasses a broad range of methodologies from various disciplines, such as biotechnology, genetic engineering, molecular biology, molecular engineering, systems biology, membrane science, biophysics, chemical and biological engineering, electrical and computer engineering, control engineering and evolutionary biology.  Due to more powerful genetic engineering capabilities and decreased DNA synthesis and sequencing costs, the field of synthetic biology is rapidly growing.In 2016, more than 350 companies across 40 countries were actively engaged in synthetic biology applications all these companies had an estimated net worth of $3 .9 billion in the global market Synthetic biology currently has no generally accepted definition. Here are a few examples:the use of a mixture of physical engineering and genetic engineering to create new (and, therefore, synthetic) life forms an emerging field of research that aims to combine the knowledge and methods of biology, engineering and related disciplines in the design of chemically synthesized DNA to create organisms with novel or enhanced characteristics and traits systems for useful purposes applying the engineering paradigm of systems design to biological systems in order to produce predictable and robust systems with novel functionalities that do not exist in nature”(The European Commission, 2005) This can include the possibility of a molecular assembler, based upon biomolecular systems such as the ribosome Synthetic biology has traditionally been divided into two different approaches: top down and bottom up.The top down approach involves using metabolic and genetic engineering techniques to impart new functions to living cells. The bottom up approach involves creating new biological systems in vitro by bringing together 'non-living'biomolecular components, [6] often with the aim of constructing an artificial cell.",
+
+            "Biological computers A biological computer refers to an engineered biological system that can perform computer - like operations, which is a dominant paradigm in synthetic biology.Researchers built and characterized a variety of logic gates in a number of organisms, [92] and demonstrated both analog and digital computation in living cells.They demonstrated that bacteria can be engineered to perform both analog and / or digital computation. [93][94] In human cells research demonstrated a universal logic evaluator that operates in mammalian cells in 2007.[95] Subsequently, researchers utilized this paradigm to demonstrate a proof - of -concept therapy that uses biological digital computation to detect and kill human cancer cells in 2011.[96] Another group of researchers demonstrated in 2016 that principles of computer engineering, can be used to automate digital circuit design in bacterial cells. [97] In 2017, researchers demonstrated the 'Boolean logic and arithmetic through DNA excision'(BLADE) system to engineer digital computation in human cells. [98] In 2019, researchers implemented a perceptron in biological systems opening the way for machine learning in these systems.",
         ];
         ! function Newline() {
-            const randomLine = Math.floor(Math.random() * lnc2.length);
-            document.getElementById('line2').innerHTML = lnc2[randomLine];
+            const randomLine = Math.floor(Math.random() * lnwr2.length);
+            document.getElementById('line2').innerHTML = lnwr2[randomLine];
         }();
     }
 }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/lightbox.css">
     <link rel="stylesheet" href="./css/sbc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body,
         h1,
@@ -26,14 +27,21 @@
 </head>
 
 <body class="sb-content" style="max-width:1600px" onmousedown="return false" onselectstart="return false">
-    <nav class="sb-sidebar sb-bar-block sbc-ink sb-animate-left sb-text-white sb-collapse sb-top sb-center"
-        style="z-index:3;width:300px;" id="mySidebar"><br>
+    <nav class="sb-sidebar sbc-ink sb-animate-left sb-text-white sb-collapse" style="z-index:3;width:300px;"
+        id="mySidebar"><br>
         <h3 class="sb-padding-8 sb-center"><b>Demo • W</b></h3>
-        <a href="#top" onclick="sb_close()" class="sb-bar-item sb-button">Segment One</a>
-        <a href="#seg2" onclick="sb_close()" class="sb-bar-item sb-button">Segment Two</a>
-        <a href="#seg3" onclick="sb_close()" class="sb-bar-item sb-button">Segment Three</a>
+        <div class="pdl">
+            <button class="sb-button sb-border sb-hover-green" onclick="window.location='#top'">Segment
+                01</button><br><br>
+            <button class="sb-button sb-border sb-hover-green" onclick="window.location='#seg2'">Segment
+                02</button><br><br>
+            <button class="sb-button sb-border sb-hover-green" onclick="window.location='#seg3'">Segment
+                03</button><br><br>
+            <button class="sb-button sb-border sb-hover-green" onclick="window.location='#seg4'">Segment
+                04</button>
+        </div>
     </nav>
-    <header class="sb-container sb-top sb-hide-large  sb-card sbc-whit sb-xlarge sb-padding-16" id="hidhead">
+    <header class="sb-container sb-top sb-hide-large sb-card sbc-whit sb-xlarge sb-padding-16" id="hidhead">
         <span class="sb-left sb-padding sb-text-black">Demo Website</span>
         <a href="javascript:void(0)" class="sb-right sb-button sb-text-black" onclick="sb_open()">☰</a>
     </header>
@@ -45,51 +53,15 @@
         <!-- seg 1 -->
         <div class="sb-container sb-padding-16 sb-card sbc-fgrn" id="seg1">
             <h1 class="">INTRODUCTION • W</h1>
-            <p id="dateago">x</p>
-            <p class="jtfy">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi! Possimus molestiae libero adipisci
-                exercitationem nulla inventore distinctio iusto, quis optio, neque corporis! Nam enim eveniet ducimus
-                modi, rerum voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officia
-                laboriosam architecto atque, cum ipsam fugit obcaecati vel laborum nisi eaque. Maxime molestiae
-                inventore aliquid voluptatum est nam, numquam non! Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Nobis dignissimos fugit qui voluptas, mollitia expedita facere et ipsum id, dolores tenetur
-                provident placeat inventore magni laboriosam non excepturi praesentium quisquam?Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Eius, porro! Impedit nobis sequi ullam in quas tempore numquam cum
-                recusandae, nam placeat vero dolorem dolores adipisci consectetur, deleniti doloribus maiores!Loremlo
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, deleniti ad minus laudantium temporibus
-                architecto nostrum iusto eos harum molestias voluptate mollitia accusamus at magni aperiam quibusdam
-                inventore? Provident, quo!Loremlolo
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi! Possimus molestiae libero adipisci
-                exercitationem nulla inventore distinctio iusto, quis optio, neque corporis! Nam enim eveniet ducimus
-                modi, rerum voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officia
-                laboriosam architecto atque, cum ipsam fugit obcaecati vel laborum nisi eaque. Maxime molestiae
-                inventore aliquid voluptatum est nam, numquam non! Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Nobis dignissimos fugit qui voluptas, mollitia expedita facere et ipsum id, dolores tenetur
-                provident placeat inventore magni laboriosam non excepturi praesentium quisquam?Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Eius, porro! Impedit nobis sequi ullam in quas tempore numquam cum
-                recusandae, nam placeat vero dolorem dolores adipisci consectetur, deleniti doloribus maiores!Loremlo
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, deleniti ad minus laudantium temporibus
-                architecto nostrum iusto eos harum molestias voluptate mollitia accusamus at magni aperiam quibusdam
-                inventore? Provident, quo!Loremlolo
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi! Possimus molestiae libero adipisci
-                exercitationem nulla inventore distinctio iusto, quis optio, neque corporis! Nam enim eveniet ducimus
-                modi, rerum voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officia
-                laboriosam architecto atque, cum ipsam fugit obcaecati vel laborum nisi eaque. Maxime molestiae
-                inventore aliquid voluptatum est nam, numquam non! Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Nobis dignissimos fugit qui voluptas, mollitia expedita facere et ipsum id, dolores tenetur
-                provident placeat inventore magni laboriosam non excepturi praesentium quisquam?Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Eius, porro! Impedit nobis sequi ullam in quas tempore numquam cum
-                recusandae, nam placeat vero dolorem dolores adipisci consectetur, deleniti doloribus maiores!Loremlo
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, deleniti ad minus laudantium temporibus
-                architecto nostrum iusto eos harum molestias voluptate mollitia accusamus at magni aperiam quibusdam
-                inventore? Provident, quo!Loremlolo
-
-
+            <div id="line1"></div>
+            <p id="date1"></p>
+            <b>Refresh the page to see line changing.</b><br>
+            <p class="jtfy" id="line2"></p>
             </p>
         </div>
         <!-- seg 2 -->
         <div class="sb-container sb-center sbc-mint sb-text-black sb-padding-8" id="seg2">
-            <h4><b>DEMONSTRATION • W</b></h4>
+            <h4><b>MEDIA DEMONSTRATION • W</b></h4>
             <div class="container">
                 <div class="mySlides">
                     <div class="imgindex">1 / 6</div>
@@ -194,7 +166,6 @@
                     temporibus
                     architecto nostrum iusto eos harum molestias voluptate mollitia accusamus at magni aperiam quibusdam
                     inventore? Provident, quo!Loremlolo
-
                 </p>
                 <!-- </div> -->
             </div>
@@ -216,28 +187,45 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, deleniti ad minus laudantium temporibus
                 architecto nostrum iusto eos harum molestias voluptate mollitia accusamus at magni aperiam quibusdam
                 inventore? Provident, quo!Loremlolo
-
             </p>
             <!-- </div> -->
         </div>
         <footer class="sb-container sb-padding-16 sbc-ugr">
             <div class="sb-row-padding">
                 <div class="sb-third">
-                    <h3 class="sb-center">COL 1</h3>
-                    <p class="cpar">This could be anything.</p>
+                    <h3 class="">CONTACT</h3>
+                    <td>
+                        <div class="sb-text-white sb-xlarge">
+                            <a href="https://www.linkedin.com/in/subbrat/" target="_blank"><i
+                                    class="fa fa-linkedin sb-hover-opacity"></i></a>
+                            <a href="http://www.github.com/Subbrat" target="_blank"><i
+                                    class="fa fa-github sb-hover-opacity"></i></a>
+                            <a href="https://www.quora.com/profile/Subbrat" target="_blank"><i
+                                    class="fa fa-quora sb-hover-opacity"></i></a>
+                            <a href="mailto:m.subrat606@gmail.com" target="_blank"> <i
+                                    class="fa fa-envelope sb-hover-opacity"></i></a>
+                        </div>
+                    </td>
                 </div>
                 <div class="sb-third">
-                    <h3 class="sb-center">COL 2</h3>
-                    <li class="libu sb-center">
-                        <p>page page</p>
+                    <h3 class="">NAVIGATION</h3>
+                    <li class="libu txlr">
+                        <a href="https://iiserbpr.ac.in" target="_blank" class="ndc">• Home page</a>
                     </li>
-                    <li class="libu sb-center">
-                        <p>sub row</p>
+                    <li class="libu txlr ">
+                        <a href="https://2021.igem.org/Team:IISER_Berhampur" target="_blank" class="ndc">• iGEM 2021</a>
                     </li>
+                    <li class="libu txlr ">
+                        <a href="#top" class="ndc">• Back To Top</a> </li>
                 </div>
                 <div class="sb-third">
-                    <h3 class="sb-center">COL3</h3>
-                    <p class="cpar">This could be...</p>
+                    <h3 class="">Other Info</h3>
+                    <table style="border: solid white 1px">
+                        <tr>
+                            <td style="width:100px; border:none" class="sb-text-white"> Total visitors: </td>
+                            <td id="c" class="sb-center sb-text-black">40</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </footer>

@@ -10,3 +10,18 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+.pdl {
+    padding-left: 33%;
+}
+
+
+td {
+    border: solid white 1px;
+    min-width: 90px;
+
+}
+
+.ndc {
+    text-decoration: none;
+}
