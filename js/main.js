@@ -1,8 +1,26 @@
-// {
-// // right click prevention
-// document.oncontextmenu = new Function("return false");
-// }
 {
+
+    window.addEventListener('DOMContentLoaded', function () {
+        let mypars = document.querySelectorAll('p'),
+            mybrs = document.querySelectorAll('br');
+
+        function doStuff(callback) {
+            callback();
+        }
+
+        doStuff(function () {
+            document.body.className = 'visible';
+        });
+    }, false);
+}
+
+
+
+{
+
+    // right click prevention
+    document.oncontextmenu = new Function("return false");
+} {
     function refreshPage() {
         var page_y = $(document).scrollTop();
         window.location.href = window.location.href + '?page_y=' + page_y;
