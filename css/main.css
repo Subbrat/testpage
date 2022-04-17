@@ -44,14 +44,11 @@ td {
 }
 
 
-@media only screen and (min-width : 379px) {
+/*
+@media screen and (max-width: 980px) {
     .slides {
-        width: 50%
+        width: 180%;
+
+
     }
-
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width : 1200px) {
-    /* Styles */
-}
+} */

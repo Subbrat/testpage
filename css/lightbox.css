@@ -15,7 +15,7 @@ img {
 /* Hide the images by default */
 .slides {
     display: none;
-    height: 10%;
+
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -83,7 +83,7 @@ img {
 /* Six columns side by side */
 .column {
     float: left;
-    width: 11.11%;
+    width: 25%;
 }
 
 /* Add a transparency effect for thumnbail images */

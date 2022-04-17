@@ -2,7 +2,10 @@
 
     // right click prevention
     document.oncontextmenu = new Function("return false");
-} {
+}
+
+
+{
     function refreshPage() {
         var page_y = $(document).scrollTop();
         window.location.href = window.location.href + '?page_y=' + page_y;

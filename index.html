@@ -26,10 +26,9 @@
 </head>
 
 <body class="sb-content" style="max-width:1600px" onmousedown="return false" onselectstart="return false">
-
-    <nav class="sb-sidebar sbc-ink sb-animate-fade sb-text-white sb-collapse sb-top " style="z-index:3;width:300px;"
+    <nav class="sb-sidebar sbc-ink sb-animate-opacity sb-text-white sb-collapse sb-top " style="z-index:3;width:300px;"
         id="mySidebar"><br>
-        <h3 class="sb-padding-8 sb-center"><b>Demo • W</b></h3>
+        <h3 class="sb-padding-8 s6-animate-opacity sb-center"><b>Demo • W</b></h3>
         <div class="pdl">
             <button class="sb-button sb-border sb-hover-green" onclick="window.location='#top'">Segment
                 01</button><br><br>
@@ -45,58 +44,38 @@
     </header>
     <div class="sb-overlay sb-hide-large sb-animate-opacity" onclick="sb_close()" style="cursor:pointer" id="overlay">
     </div>
-    <!-- MAIN PAGE CONTENT! -->
+    <!-- main -->
     <div class="sb-main" style="margin-left:300px">
         <div class="sb-hide-large" style="margin-top:65px"></div>
         <!-- seg 1 -->
         <div class="sb-container sb-padding-16 sb-card sbc-fgrn" id="seg1">
-            <h1 class="">INTRODUCTION • W</h1>
+            <h1>INTRODUCTION</h1>
             <div id="line1"></div>
             <p id="date1"></p>
             <b>Refresh the page to see line changing.</b><br>
-            <p class="jtfy" id="line2"></p>
+            <p id="line2"></p>
             </p>
         </div>
         <!-- seg 2 -->
-        <div class="sb-container sb-center sbc-mint sb-text-black sb-padding-8" id="seg2">
+        <div class="sb-container sbc-mint sb-text-black sb-padding-8" id="seg2">
             <h4><b>MEDIA DEMONSTRATION • W</b></h4>
-            <div class="container">
+            <div class="container sb-center">
                 <div class="slides">
-                    <div class="imgindex">1 / 9</div>
-                    <video style="width:58.9%"" controls=" controls" muted poster="./imges/slide1.jpg">
+                    <div class="imgindex">1 / 4</div>
+                    <video style="width:58.9%" controls=" controls" poster="./imges/slide1.jpg">
                         <source src="./imges/mov_bbb.mp4" type="video/mp4">
                     </video>
                 </div>
+                <div class="slides ">
+                    <div class="imgindex">2 / 4</div>
+                    <img src="./imges/slide1.jpg " style="width:60%">
+                </div>
                 <div class="slides">
-                    <div class="imgindex">2 / 9</div>
+                    <div class="imgindex">3 / 4</div>
                     <img src="./imges/slide2.jpg" style="width:60%">
                 </div>
                 <div class="slides">
-                    <div class="imgindex">3 / 9</div>
-                    <img src="./imges/slide3.jpg" style="width:60%">
-                </div>
-                <div class="slides">
-                    <div class="imgindex">4 / 9</div>
-                    <img src="./imges/slide1.jpg" style="width:60%">
-                </div>
-                <div class="slides">
-                    <div class="imgindex">5 / 9</div>
-                    <img src="./imges/slide2.jpg" style="width:60%">
-                </div>
-                <div class="slides">
-                    <div class="imgindex">6 / 9</div>
-                    <img src="./imges/slide3.jpg" style="width:60%">
-                </div>
-                <div class="slides">
-                    <div class="imgindex">7 / 9</div>
-                    <img src="./imges/slide1.jpg" style="width:60%">
-                </div>
-                <div class="slides">
-                    <div class="imgindex">8 / 9</div>
-                    <img src="./imges/slide2.jpg" style="width:60%">
-                </div>
-                <div class="slides">
-                    <div class="imgindex">9 / 9</div>
+                    <div class="imgindex">4 / 4</div>
                     <img src="./imges/slide3.jpg" style="width:60%">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -119,26 +98,6 @@
                         <div class="column">
                             <img class="demo cursor" src="./imges/slide1.jpg" style="width:100%"
                                 onclick="currentSlide(4)" alt="img4">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./imges/slide2.jpg" style="width:100%"
-                                onclick="currentSlide(5)" alt="img5">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./imges/slide3.jpg" style="width:100%"
-                                onclick="currentSlide(6)" alt="img6">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./imges/slide1.jpg" style="width:100%"
-                                onclick="currentSlide(7)" alt="img7">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./imges/slide2.jpg" style="width:100%"
-                                onclick="currentSlide(8)" alt="img8">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./imges/slide3.jpg" style="width:100%"
-                                onclick="currentSlide(9)" alt="img9">
                         </div>
                     </div>
                 </div>
@@ -169,7 +128,7 @@
         <!-- seg3 -->
         <div class="sb-container sbc-whit sb-padding-32 sb-padding-large" id="seg3">
             <h4 class="sb-center">SEGMENT THREE • W</h4>
-            <p class="jtfy">
+            <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi! Possimus molestiae libero adipisci
                 exercitationem nulla inventore distinctio iusto, quis optio, neque corporis! Nam enim eveniet ducimus
                 modi, rerum voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officia
@@ -187,22 +146,22 @@
         <footer class="sb-container sb-padding-16 sbc-ugr">
             <div class="sb-row-padding">
                 <div class="sb-third">
-                    <h3 class="">CONTACT</h3>
-                    <td>
-                        <div class="sb-text-white sb-xlarge">
-                            <a href="https://www.linkedin.com/in/subbrat/" target="_blank"><i
-                                    class="fa fa-linkedin sb-hover-opacity"></i></a>
-                            <a href="http://www.github.com/Subbrat" target="_blank"><i
-                                    class="fa fa-github sb-hover-opacity"></i></a>
-                            <a href="https://www.quora.com/profile/Subbrat" target="_blank"><i
-                                    class="fa fa-quora sb-hover-opacity"></i></a>
-                            <a href="mailto:m.subrat606@gmail.com" target="_blank"> <i
-                                    class="fa fa-envelope sb-hover-opacity"></i></a>
-                        </div>
-                    </td>
+                    <h3>CONTACT</>
+                        <td>
+                            <div class="sb-text-white sb-xlarge">
+                                <a href="https://www.linkedin.com/in/subbrat/" target="_blank"><i
+                                        class="fa fa-linkedin sb-hover-opacity"></i></a>
+                                <a href="http://www.github.com/Subbrat" target="_blank"><i
+                                        class="fa fa-github sb-hover-opacity"></i></a>
+                                <a href="https://www.quora.com/profile/Subbrat" target="_blank"><i
+                                        class="fa fa-quora sb-hover-opacity"></i></a>
+                                <a href="mailto:m.subrat606@gmail.com" target="_blank"> <i
+                                        class="fa fa-envelope sb-hover-opacity"></i></a>
+                            </div>
+                        </td>
                 </div>
                 <div class="sb-third">
-                    <h3 class="">NAVIGATION</h3>
+                    <h3>NAVIGATION</h3>
                     <li class="libu txlr">
                         <a href="https://iiserbpr.ac.in" target="_blank" class="ndc">• Home page</a>
                     </li>
@@ -213,7 +172,7 @@
                         <a href="#top" class="ndc">• Back To Top</a> </li>
                 </div>
                 <div class="sb-third">
-                    <h3 class="">Other Info</h3>
+                    <h3>Other Info</h3>
                     <table style="border: solid white 1px">
                         <tr>
                             <td style="width:100px; border:none" class="sb-text-white"> Total visitors: </td>
