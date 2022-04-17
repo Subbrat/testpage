@@ -13,7 +13,7 @@ img {
 }
 
 /* Hide the images by default */
-.mySlides {
+.slides {
     display: none;
     height: 10%;
 }

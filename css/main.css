@@ -42,3 +42,14 @@ td {
 .ndc {
     text-decoration: none;
 }
+
+
+@media only screen and (max-width : 379px) {
+    .slidesX
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1200px) {
+    /* Styles */
+}
