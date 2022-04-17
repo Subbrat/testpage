@@ -4,213 +4,247 @@
 <head>
     <title>Demo Webpage</title>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./imges/icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="./imges/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"> -->
-    <meta name="keywords" content="keywords, keywords" />
-    <link rel="stylesheet" href="./css/gapi.css" />
-    <link rel="stylesheet" href="./css/s6.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- lik -->
-    <link rel="stylesheet" href="css/slideshow.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="js/slideshow.js"></script>
+    <meta name="keywords" content="keywords, keywords">
+    <link rel="stylesheet" href="./css/gapi.css">
+    <link rel="stylesheet" href="./css/sb.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
     <style>
-        .flex-container {
-            position: relative;
-            margin: 0 auto;
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
         }
     </style>
 </head>
 
-<body onmousedown="return false" onselectstart="return false" class="s6-light-grey s6-content" style="max-width:1600px">
-    <!-- Sidebar/menu -->
-    <nav class="s6-sidebar s6-bar-block s6-white s6-animate-left s6-text-grey s6-collapse s6-top s6-center"
+<body class="sb-content" style="max-width:1600px" onmousedown="return false" onselectstart="return false">
+    <nav class="sb-sidebar sb-bar-block sb-white sb-animate-left sb-text-grey sb-collapse sb-top sb-center"
         style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="s6-padding-64 s6-center"><b>iGEM</b></h3>
-        <img src="./imges/demo.jpg" style="width:250px">
-        <br>
-        <br>
-        <br>
-        <!-- <a href="javascript:void(0)" onclick="s6_close()" class="s6-bar-item s6-button s6-padding s6-hide-large">CLOSE</a> -->
-        <a href="#" onclick="s6_close()" class="s6-bar-item s6-button">SEGMENT ONE</a>
-        <a href="#segment2" onclick="s6_close()" class="s6-bar-item s6-button">SEGMENT TWO</a>
-        <a href="#segment3" onclick="s6_close()" class="s6-bar-item s6-button">SEGMENT THREE</a>
+        <h3 class="sb-padding-32 sb-center"><b>Demo • W</b></h3>
+        <a href="javascript:void(0)" onclick="sb_close()" class="sb-bar-item sb-button sb-padding sb-hide-large">segment
+            one</a>
+        <a href="#" onclick="sb_close()" class="sb-bar-item sb-button">segment one</a>
+        <a href="#seg2" onclick="sb_close()" class="sb-bar-item sb-button">segment two</a>
+        <a href="#seg3" onclick="sb_close()" class="sb-bar-item sb-button">segment three</a>
     </nav>
-    <!-- Top menu on small screens -->
-    <header class="s6-container s6-top s6-hide-large s6-white s6-xlarge s6-padding-16">
-        <span class="s6-left s6-padding">DEMO WEBSITE</span>
-        <a href="javascript:void(0)" class="s6-right s6-button s6-white" onclick="s6_open()">☰</a>
+    <header class="sb-container sb-top sb-hide-large sb-card sb-white sb-xlarge sb-padding-16" id="hidhead">
+        <span class="sb-left sb-padding">demo website</span>
+        <a href="javascript:void(0)" class="sb-right sb-button sb-white" onclick="sb_open()">☰</a>
     </header>
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="s6-overlay s6-hide-large s6-animate-opacity" onclick="s6_close()" style="cursor:pointer"
+    <div class="sb-overlay sb-hide-large sb-animate-opacity" onclick="sb_close()" style="cursor:pointer"
         title="close side menu" id="myOverlay"></div>
-    <!-- ! MAIN PAGE CONTENT! -->
-    <div class="s6-main" style="margin-left:300px">
-        <!-- Push down content on small screens -->
-        <div class="s6-hide-large" style="margin-top:83px"></div>
-        <!-- SEG 1 -->
-        <div class="s6-row">
-            <div class="s6-padding">
-                <p>
-                    <h1>SEGMENT ONE</h1>
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                </p>
-            </div>
+    <!-- MAIN PAGE CONTENT! -->
+    <div class="sb-main" style="margin-left:300px">
+        <div class="sb-hide-large" style="margin-top:83px"></div>
+        <!-- seg 1 -->
+        <div class="sb-container sb-padding-32 bord sb-card" id="seg1">
+            <h1 class="">INTRODUCTION • W</h1>
+            <p>
+                could be any paragraph could be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                be any paragraphcould be any paragraphcould be any paragraphcould be any paragraph
+            </p>
+
+
+
         </div>
-        <!--SEG 2 -->
-        <div class="s6-container s6-center s6-text-light-grey s6-padding-4" style="border:solid " id="segment2">
-            <div class="s6-content">
-                <!-- slideshow start -->
-                <div class="flex-container ">
-                    <div class="flexslider">
-                        <h4 class="s6-center s6-text-black s6-padding-4"><b>DEMONSTRATION</b></h4>
-                        <ul class="slides">
-                            <li id="libu">
-                                <a><img src="./imges/slide1.jpg" /></a>
-                                <p class="s6-text-black s6-white">Caption 1</p>
-                            </li>
-                            <li id="libu" width="10%">
-                                <a><img src="./imges/slide2.jpg" /></a>
-                                <p class="s6-text-black s6-white">Caption 2</p>
-                            </li>
-                            <li id="libu">
-                                <img src="./imges/slide3.jpg" />
-                                <p class="s6-text-black s6-white">Caption 3</p>
-                            </li>
-                        </ul>
+        <!-- seg 2 -->
+        <div class="sb-container sb-center bord sb-dark-grey sb-text-light-grey sb-padding-8" id="seg2">
+            <h4><b>DEMONSTRATION • W</b></h4>
+            <div class="container">
+                <div class="mySlides">
+
+
+                    <div class="numbertext">1 / 6</div>
+                    <video style="width:59%"" controls=" controls" muted poster="./imges/slide1.jpg">
+                        <source src="./imges/mov_bbb.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./imges/slide2.jpg" style="width:60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./imges/slide3.jpg" style="width:60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./imges/slide1.jpg" style="width:60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./imges/slide2.jpg" style="width:60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./imges/slide3.jpg" style="width:60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 6</div>
+                    <img src="./imges/slide1.jpg" style="width:60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 6</div>
+                    <img src="./imges/slide2.jpg" style="width:60%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 6</div>
+                    <img src="./imges/slide3.jpg" style="width:60%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide1.jpg" style="width:100%"
+                                onclick="currentSlide(1)" alt="img1">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide2.jpg" style="width:100%"
+                                onclick="currentSlide(2)" alt="img2 ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide3.jpg" style="width:100%"
+                                onclick="currentSlide(3)" alt="img3 ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide1.jpg" style="width:100%"
+                                onclick="currentSlide(4)" alt="img1">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide2.jpg" style="width:100%"
+                                onclick="currentSlide(5)" alt="img2 ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide3.jpg" style="width:100%"
+                                onclick="currentSlide(6)" alt="img3 ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide1.jpg" style="width:100%"
+                                onclick="currentSlide(7)" alt="img1">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide2.jpg" style="width:100%"
+                                onclick="currentSlide(8)" alt="img2 ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./imges/slide3.jpg" style="width:100%"
+                                onclick="currentSlide(9)" alt="img3 ">
+                        </div>
                     </div>
                 </div>
-                <br>
-                <br>
-                <script>
-                    $(document).ready(function () {
-                        $('.flexslider').flexslider({
-                            animation: 'fade',
-                            controlsContainer: '.flexslider'
-                        });
-                    });
-                </script>
-                <!-- slideshow end-->
-            </div>
-        </div>
-        <!--SEG 3 -->
-        <div class="s6-light-grey" style="border: solid red 1px;" id="segment3">
-            <h4><b>SEGMENT THREE</b></h4>
-            <div class="s6-pink">
-                <h4>Heading</h4>
-                <p>
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, jsbkdjh
-                    sdfh
-                    abcd,abcd,shdcbjshdbckajsc asdchas
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
-                    abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd, abcd,
+                <!-- <div class="sb-content" style="max-width:600px"> -->
+                <h4 class="txlr">SUB-SEGMENT • TWO</h4>
+                <p class="txlr">
+                    could be any paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould
+                    beSDBNNNNNNNNNNNNNNNNNG any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be any paragraphcould be any paragraphcocould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapuld be any paragraphcould
+                    be
+                    any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be any paragraph
                 </p>
-                <div class="s6-row-padding" style="margin:0 -16px">
-                </div>
+                <!-- </div> -->
             </div>
-        </div>
-        <!-- Footer -->
-        <footer class="s6-container s6-padding-8 s6-grey" style="padding-bottom:3%">
-            <div class="s6-row-padding s6-center">
-                <div class="s6-third">
-                    <h3>seg1</h3>
-                </div>
-                <div class="s6-third">
-                    <h3>seg2</h3>
-                    <!-- <ul style="list-style: none;"> -->
-                    <li id="libu">x
-                    </li>
-                    <li id="libu">y
-                    </li>
-                </div>
-                <div class="s6-third">
-                    <h3>seg 3</h3>
-                    <p>
-                    </p>
-                </div>
+            <!-- seg3 -->
+            <div class="sb-container sb-light-grey sb-padding-32 sb-padding-large" id="seg3">
+                <!-- <div class="sb-content" style="max-width:600px"> -->
+                <h4 class="sb-center">SEGMENT THREE • W</h4>
+                <p>
+                    ould be any paragraphcould be any paragraphcould be any paragraphvcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragrapcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be anyould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be anyould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be any paragraphcould be any paragraphcould be any paragraphcould be any
+                    paragraphcould be any
+                </p>
+                <!-- </div> -->
             </div>
-        </footer>
-        <div class="s6-black s6-center s6-padding-8">Made By <a href="https://github.com/subbrat/"
-                style="text-decoration:none" title="s6.CSS" target="_blank" class="s6-hover-opacity">Subbrat</a>
+            <footer class="sb-container sb-padding-16 sb-grey">
+                <div class="sb-row-padding">
+                    <div class="sb-third">
+                        <h3 class="sb-center">COL 1</h3>
+                        <p class="cpar">This could be anything.</p>
+                    </div>
+                    <div class="sb-third">
+                        <h3 class="sb-center">COL 2</h3>
+                        <li class="libu sb-center">
+                            <p>page page</p>
+                        </li>
+                        <li class="libu sb-center">
+                            <p>sub row</p>
+                        </li>
+                    </div>
+                    <div class="sb-third">
+                        <h3 class="sb-center">COL3</h3>
+                        <p class="cpar">This could be...</p>
+                    </div>
+                </div>
+            </footer>
+            <div class="sb-black sb-center sb-padding-8">Made By <a href="https://github.com/subbrat/" target="_blank"
+                    class="sb-hover-opacity nodec">Subbrat</a></div>
+            <!-- End -->
         </div>
-        <!-- End page content -->
-    </div>
-    <script>
-        // Script to open and close sidebar
-        function s6_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
+        <script>
+            function sb_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
 
-        function s6_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-    </script>
-    <script src="./js/s6.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/dates.js"></script>
-    <script src="./js/sorting.js"></script>
-    <script src="./js/counter.js"></script>
-    <script src="./js/randomlines.js"></script>
+            function sb_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+        <script src="./js/main.js"></script>
+        <script src="./js/lightbox.js"></script>
 </body>
 
 </html>

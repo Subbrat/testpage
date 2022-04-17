@@ -1,7 +1,21 @@
-﻿/* for personal and community use by https://github.com/subbrat */
+/* for personal and community use by https://github.com/subbrat */
+
+
+.nodec {
+    text-decoration: none;
+}
+
+.libu {
+    list-style: none;
+}
 
 
 
+
+
+
+
+/* Uppppp */
 
 html {
     box-sizing: border-box;
@@ -219,7 +233,7 @@ textarea {
 /* End extract */
 html,
 body {
-    font-family: Verdana, sans-serif;
+    /* font-family: Verdana, sans-serif; */
     font-size: 15px;
     line-height: 1.5
 }
