@@ -9,7 +9,7 @@ body {
 }
 
 .pimg {
-    width: 161px;
+    width: 220px;
 }
 
 .title {
@@ -68,12 +68,13 @@ body {
 }
 
 .image {
-    width: 165px;
+    width: 220px;
+    height: 220px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid #fff;
+    border: 15px solid #fff;
     transition: all 500ms ease;
 }
 
