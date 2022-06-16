@@ -885,6 +885,21 @@ a {
     }
 }
 
+/* scroll  */
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.152);
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(215, 215, 215);
+    border-radius: 7px;
+}
+
 @media (max-width:768px) {
     .s6-modal-content {
         width: 500px
@@ -1108,6 +1123,7 @@ a {
     padding-right: 4px;
     font-size: 110%
 }
+
 
 .s6-card,
 .s6-card-2 {

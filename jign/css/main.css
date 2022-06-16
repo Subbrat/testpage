@@ -8,6 +8,10 @@ body {
     font-weight: 400;
 }
 
+.pimg {
+    width: 161px;
+}
+
 .title {
     margin-top: -50px;
     margin-bottom: 90px;
@@ -159,7 +163,7 @@ body {
     width: 153px;
     height: 117px;
     content: '';
-    background-image: url(team-circle-1-1.png);
+    background-image: url(./../imges/team-circle-1-1.png);
     transform: perspective(200px) scaleX(0) scaleY(0);
     transition: transform 500ms ease, opacity 500ms ease;
     opacity: 0;
@@ -173,7 +177,7 @@ body {
     width: 140px;
     height: 156px;
     content: '';
-    background-image: url(team-circle-1-2.png);
+    background-image: url(./../imges/team-circle-1-2.png);
     transform: perspective(150px) scaleX(0) scaleY(0);
     transition: transform 500ms ease, opacity 500ms ease;
     opacity: 0;
