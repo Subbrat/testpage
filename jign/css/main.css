@@ -163,7 +163,7 @@ body {
     width: 153px;
     height: 117px;
     content: '';
-    background-image: url(./../imges/icn/circle1.png);
+    background-image: url(./../circle1.png);
     transform: perspective(200px) scaleX(0) scaleY(0);
     transition: transform 500ms ease, opacity 500ms ease;
     opacity: 0;
@@ -177,7 +177,7 @@ body {
     width: 140px;
     height: 156px;
     content: '';
-    background-image: url(./../imges/icn/circle2.png);
+    background-image: url(./../circle2.png);
     transform: perspective(150px) scaleX(0) scaleY(0);
     transition: transform 500ms ease, opacity 500ms ease;
     opacity: 0;
