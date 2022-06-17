@@ -1,0 +1,10 @@
+{
+	"html": {
+		"prefix": "qw",
+		"body": [
+			"<a target=\"_blank\" href=\"https://${1:soc}.com/${2:usn}\"><i",
+			"                                            class=\"fa fa-${1:icon}\"></i></a>"
+		],
+		"description": "html"
+	}
+}
